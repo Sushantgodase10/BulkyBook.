@@ -1,0 +1,48 @@
+﻿@model Product
+
+
+<div class="card mb-3 shadow border-0">
+    <h1 class="card-header bg-info bg-gradient m-lg-0 py-3 text-center">Delete Product</h1>
+    <div class="card-body">
+        <form method="post">
+            <input disabled readonly hidden asp-for="Id" class="form-control" />
+            <div class="mb-2">
+                <label asp-for="Title" class="form-text text-dark"></label>
+                <input disabled readonly asp-for="Title" class="form-control" />
+            </div>
+            <div class="mb-2">
+                <label asp-for="Description" class="form-text text-dark"></label>
+                <textarea disabled readonly asp-for="Description" class="form-control" ></textarea>
+            </div>
+            <div class="mb-2">
+                <label asp-for="Auther" class="form-text text-dark"></label>
+                <input disabled readonly asp-for="Auther" class="form-control" />
+            </div>
+            <div class="mb-2">
+                <label asp-for="ISBN" class="form-text text-dark"></label>
+                <input disabled readonly asp-for="ISBN" class="form-control" />
+            </div>
+            <div class="mb-2">
+                <label asp-for="ListPrice" class="form-text text-dark"></label>
+                <input disabled readonly asp-for="ListPrice" class="form-control" />
+            </div>
+            <div class="mb-2">
+                <label asp-for="Price" class="form-text text-dark"></label>
+                <input disabled readonly asp-for="Price" class="form-control" />
+            </div>
+            <div class="mb-2">
+                <label asp-for="Price50" class="form-text text-dark"></label>
+                <input disabled readonly asp-for="Price50" class="form-control" />
+            </div>
+            <div class="mb-2">
+                <label asp-for="Price100" class="form-text text-dark"></label>
+                <input disabled readonly asp-for="Price100" class="form-control" />
+            </div>
+
+            <div class="btn-group mb-2" role="group">
+                <button type="submit" class="btn btn-primary m-2">Delete</button>
+                <a asp-controller="Product" asp-action="Index" class="btn btn-outline-secondary m-2">Product List</a>
+            </div>
+        </form>
+    </div>
+</div>

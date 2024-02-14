@@ -1,0 +1,23 @@
+﻿@model Category
+
+<div class="card mb-3 shadow border-0">
+    <h1 class="card-header bg-info bg-gradient m-lg-0 py-3 text-center">Delete Category</h1>
+    <div class="card-body">
+        <form method="post" class="w-100">
+            <input asp-for="Id" hidden />
+            <div class="mb-2">
+                <label asp-for="CategoryName" class="form-text text-dark"></label>
+                <input disabled readonly asp-for="CategoryName" class="form-control" />
+            </div>
+            <div class="mb-2">
+                <label asp-for="DisplayOrder" class="form-text text-dark"></label>
+                <input disabled readonly asp-for="DisplayOrder" class="form-control" />
+            </div>
+
+            <div class="btn-group mb-2" role="group">
+                <button type="submit" class="btn btn-danger m-2">Delete</button>
+                <a asp-controller="Category" asp-action="Index" class="btn btn-outline-secondary m-2">Category List</a>
+            </div>
+        </form>
+    </div>
+</div>
